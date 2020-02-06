@@ -1,0 +1,41 @@
+package first_project;
+
+import java.util.*;
+
+    		class abc{
+    			int id;
+    			String emp;
+    			String clas;
+    			 void  alif(int roll, String name ,String course)
+    			 {
+    				 id=roll;
+    				 emp =name;
+    				 clas = course;
+    			 }
+    			 void display() { 
+    				 System.out.println(emp+""+clas+""+id);
+    			 }
+    		}
+
+public class first_class {
+	public static void main(String... args) {
+		abc s = new abc();
+		abc s1 = new abc();
+		abc s3 = new abc();
+		s.alif(30,"shah alam","b.tech ibm");
+		s1.alif(30,"shah  shah alamalam","b.tech ibm");
+
+		s3.alif(30," alam","b.tech ibm");
+		s.display();
+		s1.display();
+		s3.display();
+
+		
+		
+
+				
+		
+		
+		
+}
+}
