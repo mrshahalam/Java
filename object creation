@@ -1,0 +1,25 @@
+package first_project;
+
+import java.util.*;
+
+    		class abc{
+    			int id;
+    			String name;
+    		}
+
+public class first_class {
+	int id;
+	String name;
+	
+	public static void main(String... args) {
+		
+		first_class s = new first_class();
+		s.id=98;
+		s.name="dvsdv";
+		System.out.println(s.id+ "   "+s.name);
+				
+		
+		
+		
+}
+}
