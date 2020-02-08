@@ -1,0 +1,42 @@
+package  first_project;
+
+import java.util.*;  
+			 class Student6
+			 {
+				 int enroll;
+				 String name;
+				 
+				 Student6(int e,String n)
+				 {
+					 enroll=e;
+					 name=n;
+				 }
+				    Student6(){}  
+
+				 void display()
+				 {
+					 System.out.println(enroll+"  "+name);
+				 }
+			 }
+			public class first_class {
+    				public static void main(String... args) {
+    					Student6 s = new Student6(88435,"shah alam");
+    				    Student6 s2 = new Student6(); 
+    				    s2.enroll=s.enroll;
+    				    s2.name=s.name;
+    				    s.display();
+    				    s2.display();
+
+
+    				
+    					
+    					
+    					
+ 				
+    				
+    				 
+    				 
+    			} 	
+		
+                }
+	
