@@ -1,0 +1,37 @@
+package  first_project;
+
+import java.util.*;  
+							class Counter{  
+							
+							}  
+  
+			public class first_class {
+
+    				public static void main(String[] args) {
+    					//int r[] = new int[7];
+    					  int n, sum = 0;
+    					
+    				        Scanner s = new Scanner(System.in);
+    				        System.out.println("Enter the numbers \n");
+    				        
+    				        n = s.nextInt();
+    				        int  arr[] = new int[n];
+    				        System.out.println("Enter the numbers \n");
+
+    				        for(int i=0;i<=n;i++)
+    				        {
+    				        	arr[i]=s.nextInt();
+    				        	sum = sum+arr[i];
+    				        }
+    				        System.out.print("Sum"+sum);
+    				        
+    				        
+    				        
+    				         
+    				       
+    					}	 
+                }
+			
+			
+			
+	
