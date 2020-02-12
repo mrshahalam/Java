@@ -1,0 +1,43 @@
+package  first_project;
+
+import java.util.*;  
+ 
+							
+
+						
+			public class first_class {
+
+    				public static void main(String[] args) {
+    					
+    					int a[][]= {{76,29,43},{25,34,43},{68,56,65}};
+    					int b[][]= {{7,46,33},{46,34,40},{26,64,55}};
+    					
+    					int c[][] = new int[3][3];
+    					
+    					for(int i=0;i<=3;i++)
+    					{
+        					for(int j=0;j<=3;j++)
+        					{
+        						c[i][j]=0;
+        						
+        						for(int k=0;k<=3;k++)
+        						{
+        							c[i][j]= a[i][j]*b[i][j];
+            						System.out.print(c[i][j]+"  ");
+        						}
+        						
+            					System.out.println(  "  " );
+
+        					}
+
+    					}
+
+    					}
+    					
+    					 
+                }
+						
+			
+			
+			
+	
