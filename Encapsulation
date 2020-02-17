@@ -1,0 +1,74 @@
+package  first_project;
+										
+import java.util.*;  
+						 class a {
+							  String name;
+							  private int roll;
+							  private  String course;
+							  private  String sem;
+							 
+							 
+							  public void setname(String n)
+							  {
+								 name =n;
+							  }
+							  public String getname()
+							  {
+								 return name;
+							  }
+							  public void setRoll(int r)
+							  {
+								  roll=r;
+							  }
+							  public  int getRoll()
+							  {
+								  return roll;
+							  }
+							  public void setcourse(String c)
+							  {
+								  course =c;
+							  }
+							  public String getcourse()
+							  {
+								  return course;
+							  }
+							  public void setsem(String s)
+							  {
+								  sem =s;
+							  }
+							  public String getsem()
+							  {
+								  return sem;
+							  }
+							 
+						 }
+														
+			public class first_class {
+				public static void main (String[] args)
+				{
+					a ob =new a();
+					ob.setname("shah alam");
+					ob.setRoll(30);
+					ob.setcourse("B.tech");
+					ob.setsem("6th");
+					System.out.println("Name :"+ob.getname());
+					System.out.println("Roll no :"+ob.getRoll());
+					System.out.println("Course :"+ob.getcourse());
+					System.out.println("Semester :"+ob.getsem());
+
+
+					
+				}		
+    		}
+							
+    					
+    					
+    					 
+                
+                
+			
+						
+			
+			
+			
+	
