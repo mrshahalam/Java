@@ -1,0 +1,52 @@
+package  first_project;
+										
+import java.util.*;  
+						 class a {
+							  private int id;
+							  private String name;
+							 
+							 public  void setId(int rollno)
+							 {
+								 id=rollno;
+								
+							 }
+							 public  int  getId()
+							 {
+									System.out.println("shah alam");
+
+								 return id;
+								
+							 }
+							 public void setName(String n)
+							 {
+								 name =n;
+							 }
+							 public  String getName()
+							 {
+								 return name;
+							 }
+						 }
+														
+			public class first_class {
+				public static void main (String[] args)
+				{
+					a ob = new a();
+					ob.setId(30);
+					ob.setName("vhsfbihsfib;");
+					System.out.println(ob.getId());
+					System.out.println(ob.getName());	   
+				}		
+    		}
+							
+    					
+    					
+    					 
+                
+                
+			
+						
+			
+			
+			
+	
+
