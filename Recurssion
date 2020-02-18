@@ -1,0 +1,41 @@
+package  first_project;
+										
+import java.util.*; 	
+				class a
+				{
+				 public  int  shah(int n)
+				 {
+					 if(n==1||n==0)
+						 return 1;
+					 else
+						 return (n*shah(n-1));
+				 }
+				}
+									
+
+			
+						
+			public  class first_class {
+				public static void main (String[] args)
+				{
+					Scanner bb = new Scanner(System.in);
+					System.out.println("Enter the number......\n");
+					int n = bb.nextInt();
+					a ob = new a();
+					System.out.print("factorial of the number is "+ ob.shah(n));
+				}
+			}
+			
+						 
+							
+    					
+    					
+    					 
+                
+                
+			
+						
+			
+			
+			
+	
