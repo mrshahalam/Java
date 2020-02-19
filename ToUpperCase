@@ -1,0 +1,22 @@
+package  first_project;
+										
+import java.util.*; 	
+
+							 class Student 
+							{ 
+								 
+								
+								
+							    } 
+			public  class first_class {
+				
+				public  static void main (String[] args)
+				{ 
+					Scanner yy  = new Scanner(System.in);
+				String s="bfaulregb";
+				System.out.print(s.toUpperCase()); 
+				
+				
+				}
+			}
+					
