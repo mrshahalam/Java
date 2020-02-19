@@ -1,0 +1,24 @@
+package  first_project;
+										
+import java.util.*; 	
+
+										    
+							public  class first_class {
+								
+								public  static void main (String[] args)
+								{ 
+									String  d = new String(" ");
+									
+									 String name ="shah alam  ";
+									 String s =name.intern();
+									 System.out.println(s);
+									 System.out.println(s==name);
+									 
+								        System.out.println(d==s);  
+								        System.out.println(d.isEmpty());  
+
+							
+								}
+							}
+							
+								
