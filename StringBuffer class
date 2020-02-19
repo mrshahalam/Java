@@ -1,0 +1,64 @@
+package  first_project;
+										
+import java.util.*; 	
+
+			//* Fibonacci number is sum of previous two Fibonacci numbers fn= fn-1+ fn-2
+			//* first 10 Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+							class fibonacci 
+							{ 
+								
+								 int fib(int n) 
+							    { 
+							    if (n <= 1) 
+							       return n; 
+							    else
+							    return fib(n-1) + fib(n-2); 
+							    } 
+							    } 
+			public  class first_class {
+				
+				public static void main (String[] args)
+				{
+					StringBuffer ob = new StringBuffer("shah alam khan is the ");
+					ob.append(" kham");
+					System.out.println(ob);
+					
+					//................................................
+					StringBuffer sb=new StringBuffer("Hello ");  
+					sb.insert(1,"Java");//now original string is changed  
+					System.out.println(sb);//prints HJavaello 
+					//................................................
+					StringBuffer sbb=new StringBuffer("Hello");  
+					sb.replace(1,3,"Java");  
+					System.out.println(sbb);//prints HJavalo  
+					//................................................
+					StringBuffer scb=new StringBuffer("Hello");  
+					sb.delete(1,3);  
+					System.out.println(scb);//prints Hlo  
+					//................................................
+					StringBuffer ssb=new StringBuffer("Hello");  
+					sb.reverse();  
+					System.out.println(ssb);//prints olleH  
+					//................................................
+					StringBuffer tsb=new StringBuffer();  
+					System.out.println(tsb.capacity());//default 16  
+					sb.append("Hello");  
+					System.out.println(sb.capacity());//now 16  
+					sb.append("java is my favourite language");  
+					System.out.println(sb.capacity());//now (16*2)+2=34 i.e (oldcapacity*2)+2
+					
+					//................................................
+					StringBuffer syb=new StringBuffer();  
+					System.out.println(syb.capacity());//default 16  
+					sb.append("Hello");  
+					System.out.println(sb.capacity());//now 16  
+					sb.append("java is my favourite language");  
+					System.out.println(sb.capacity());//now (16*2)+2=34 i.e (oldcapacity*2)+2  
+					sb.ensureCapacity(10);//now no change  
+					System.out.println(sb.capacity());//now 34  
+					sb.ensureCapacity(50);//now (34*2)+2  
+					System.out.println(sb.capacity());//now 70  
+					
+				}
+			}
+							
