@@ -1,0 +1,32 @@
+package  first_project;
+										
+import java.util.*; 	
+
+			//* Fibonacci number is sum of previous two Fibonacci numbers fn= fn-1+ fn-2
+			//* first 10 Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+							class fibonacci 
+							{ 
+								
+								 int fib(int n) 
+							    { 
+							    if (n <= 1) 
+							       return n; 
+							    else
+							    return fib(n-1) + fib(n-2); 
+							    } 
+							    } 
+			public  class first_class {
+				
+				public static void main (String[] args)
+				{
+					Scanner ob = new Scanner(System.in);
+					fibonacci oo = new fibonacci();
+					System.out.print("Enter the number   \n");
+					int n =ob.nextInt();
+					
+					 //int n = 9; 
+					    System.out.println(oo.fib(n));
+				}
+				
+			}
+							
