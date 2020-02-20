@@ -1,0 +1,29 @@
+package  first_project;
+										
+import java.util.*;
+//import java.util.regex.Matcher;
+import java.util.regex.*;
+ 
+				public  class first_class {
+					
+					public  static void main (String[] args)
+					{
+						String g ="shahalamistheboyto";
+						String pattern ="alam";
+						 boolean b = g.contains(pattern);
+						 if (b)
+						 {
+							 System.out.print("pattern found");
+							 
+						 }
+						 else
+						 {
+							 System.out.print("  Not !found");
+
+						 }
+						
+					}
+				}	    
+							
+							
+								
