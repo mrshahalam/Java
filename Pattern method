@@ -1,0 +1,34 @@
+package  first_project;
+										
+import java.util.*;
+//import java.util.regex.Matcher;
+import java.util.regex.*;
+ 
+				public  class first_class {
+					
+					public  static void main (String[] args)
+					{
+						 Pattern p =Pattern.compile("..m");
+						 Matcher m = p.matcher("ahm");
+						 boolean b =m.matches();
+						 System.out.println(b);	
+						 //..............................
+						 // Second way of pattern matching
+						 boolean o = Pattern.compile("..am").matcher("alam").matches();
+						 System.out.println(o);
+						 //..............................
+
+						 // third way of pattern matching
+
+						 boolean u = Pattern.matches("..am", "alam");
+						 System.out.println(u);
+						 //..............................
+						 
+						 System.out.print(Pattern.matches("[acd]", "acd"));
+
+
+					}
+				}	    
+							
+							
+								
