@@ -1,0 +1,45 @@
+package  first_project;									
+import java.util.*;
+import java.util.regex.*;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;  
+					 
+					   
+		 public class first_class extends Thread
+		 {
+			 public void  run()
+			 {
+				  System.out.println(Thread.currentThread().getName());  
+			 }
+			
+			 
+		public  static void main (String[] args)
+		
+		{
+			first_class obj1 = new first_class();
+			first_class obj2 = new first_class();
+			obj1.start();
+			obj2.start();
+
+
+			
+
+		}
+		 }
+					 
+		 
+	 
+		 
+		 
+
+		
+
+		
+	  
+	  
+		
+		    
+				
+		
+				
+								
