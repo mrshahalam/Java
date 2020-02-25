@@ -1,0 +1,51 @@
+package  first_project;									
+import java.util.*;
+import java.util.regex.*;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;  
+					 
+					   
+		 public class first_class extends Thread
+		 {
+			 public void  meth()
+			 {
+				 System.out.println("thread is running ....");
+			 }
+			
+			 
+		public  static void main (String[] args)
+		
+		{
+			first_class obj1 = new first_class();
+			first_class obj2 = new first_class();
+			obj1.meth();
+			obj2.meth();
+			System.out.println("First thread name :"+obj1.getName());
+			System.out.println("Second thread name :"+obj2.getName());
+			System.out.println("thread ID :"+obj1.getId());
+			
+			obj1.setName("shah alam");
+			 System.out.println("After setname method - the name of the thraed is: "+obj1.getName());
+
+
+			
+
+		}
+		 }
+					 
+		 
+	 
+		 
+		 
+
+		
+
+		
+	  
+	  
+		
+		    
+				
+		
+				
+								
