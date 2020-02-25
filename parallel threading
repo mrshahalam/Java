@@ -1,0 +1,65 @@
+package  first_project;									
+import java.util.*;
+import java.util.regex.*;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;  
+					   class a implements Runnable
+					 {
+						 public void run()
+						{
+							for(int j=0;j<=5;j++)
+							{
+							 System.out.println("i'm class a:"+j);
+							 try {Thread.sleep(800);}catch(Exception e) {}
+						
+							}
+							}
+					 }
+					   class b implements Runnable
+						 {
+							 public void run()
+							{
+								for(int i=0;i<=5;i++)
+								{
+									 System.out.println("i'm class b :"+i);
+									 try {Thread.sleep(1000);}catch(Exception e) {}
+
+								}
+								
+							}
+						 }
+	 
+		 public class first_class extends Thread
+		 {
+		
+			 
+		public  static void main (String[] args)
+		
+		{
+			a ob1 = new a();
+			b ob2 = new b();
+			Thread t1 = new Thread(ob1);
+			Thread t2 = new Thread(ob2);
+
+			t1.start();
+			t2.start();
+
+		}
+		 }
+					 
+		 
+	 
+		 
+		 
+
+		
+
+		
+	  
+	  
+		
+		    
+				
+		
+				
+								
