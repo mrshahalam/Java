@@ -1,0 +1,43 @@
+package  first_project;									
+import java.util.*;
+
+import java.util.regex.*;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.concurrent.ExecutorService;  
+import java.util.concurrent.Executors;
+
+  
+		 public class first_class extends Thread
+		 {
+			 public void finalize(){System.out.println("object is garbage collected");}  
+
+			 public static void main(String args[]){  
+				 first_class s1=new first_class();  
+				 first_class s2=new first_class();  
+				  s1=null;  
+				  s2=null;  
+				  System.gc(); 
+		    }  
+
+		}
+						
+		 
+		 
+					 
+		 
+	 
+		 
+		 
+
+		
+
+		
+	  
+	  
+		
+		    
+				
+		
+				
+								
