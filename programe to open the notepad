@@ -1,0 +1,42 @@
+package  first_project;									
+import java.util.*;
+
+import java.util.regex.*;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.concurrent.ExecutorService;  
+import java.util.concurrent.Executors;
+
+  
+		 public class first_class extends Thread
+		 {
+			 
+
+			 public static void main(String args[])throws Exception{  
+				 
+				  Runtime.getRuntime().exec("notepad");//will open a new notepad  
+
+				 
+		    }  
+
+		}
+						
+		 
+		 
+					 
+		 
+	 
+		 
+		 
+
+		
+
+		
+	  
+	  
+		
+		    
+				
+		
+				
+								
