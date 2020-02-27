@@ -1,0 +1,28 @@
+package  first_project;									
+import java.util.*;
+import java.io.*;
+
+
+  
+		 public class first_class extends Thread
+		 {
+			  public static void main(String args[])throws Exception{  
+				  FileOutputStream fout1=new FileOutputStream("D:\\abc.txt");    
+			      FileOutputStream fout2=new FileOutputStream("D:\\testout.txt");    
+			        
+			      ByteArrayOutputStream bout=new ByteArrayOutputStream();    
+			      String s = " i'm khan";
+			      byte b[] =s.getBytes();
+			      
+			      bout.write(b);    
+			      bout.writeTo(fout1);    
+			      bout.writeTo(fout2);    
+			        
+			      bout.flush();    
+			      bout.close();//has no effect    
+			      System.out.println("Success...");    
+		    }  
+
+		}
+						
+					
