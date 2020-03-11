@@ -1,0 +1,27 @@
+package test;
+import java.util.Scanner;
+public class demo {
+	  static int occuranceOfWord(String  t,String s)
+	 {
+		 String a[]=t.split(" ");
+		 int count =0;
+		 for(int i=0;i<a.length;i++)
+		 {
+			 if(s.equals(a[i]))
+			 {
+				 System.out.print(count);
+				 count++;
+			 } 
+			 
+		 }
+		 return count;
+		 
+	 }
+	public static void main(String[] args )
+	{
+		String str ="My name  and is Shah Alam . and i wnat to check the programmme whether  and Shah it is correct ot not";
+		String  word ="and";
+		System.out.print(occuranceOfWord(str,word));
+	}
+}
+	
