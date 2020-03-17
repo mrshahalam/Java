@@ -1,0 +1,27 @@
+package test;
+import java.util.Scanner;
+import java.awt.Desktop;  
+import java.io.IOException;  
+import java.net.URI;  
+import java.net.URISyntaxException;
+
+//////////////////////////////
+public class demo {
+	public static void main(String[] args )
+	{
+		 Desktop desktop = Desktop.getDesktop();  
+		           String url = "";  
+		             URI mailTo;  
+		             try {  
+		                 url = "mailTo:lxlogan5987@gmail.com" + "?subject=" + "TEST%20SUBJECT" 
+		                           + "&body=" + "TEST%20BODY";  
+		                 mailTo = new URI(url);  
+		                  desktop.mail(mailTo);  
+		            } catch (URISyntaxException e) {  
+		                 e.printStackTrace();  
+		             } catch (IOException e) {  
+		                  e.printStackTrace();  
+		             }  
+	}
+}
+	
