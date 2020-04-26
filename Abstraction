@@ -1,0 +1,32 @@
+package test;
+import java.util.*;
+
+        abstract class shape
+       {
+    	      abstract void  draw();
+       }
+        class circle extends shape
+        {
+        	void draw()
+        	{
+        		System.out.print("it is circle class");
+        	}
+        }
+        class rectangle extends shape
+        {
+        	void draw()
+        	{
+        		System.out.print("it is rectangle  class");
+	
+        	}
+        }
+public class demo {
+	public static void main(String[] args )
+	{
+		 System.out.println("Shahalam");
+		 shape ss = new circle();
+	     ss.draw();	  
+	}
+}
+
+	
