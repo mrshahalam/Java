@@ -1,0 +1,14 @@
+package test;
+import java.util.*;
+
+        
+public class demo {
+	public static void main(String[] args )
+	{
+		int i=25;
+		int b=i>>2;// new feature _00_00 introduce in java 7.1 version     11001
+				System.out.print(b);
+	}
+}
+
+	
