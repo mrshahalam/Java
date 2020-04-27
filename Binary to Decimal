@@ -1,0 +1,13 @@
+package test;
+import java.util.*;
+
+        
+public class demo {
+	public static void main(String[] args )
+	{
+		int i=0B1111;
+				System.out.print(i);
+	}
+}
+
+	
