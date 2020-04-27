@@ -1,0 +1,15 @@
+package test;
+import java.util.*;
+
+        
+public class demo {
+	public static void main(String[] args )
+	{
+		int i=12;
+		
+		int j = i==14?2:8;
+		System.out.print(j);
+	}
+}
+
+	
