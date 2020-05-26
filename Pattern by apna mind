@@ -1,0 +1,26 @@
+package test;
+
+/*
+1
+23
+345
+4567
+56789
+678910
+ */
+ 
+public class demo {
+	public static void main(String[] args )
+	{
+		for(int i=0;i<=50;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(j+i);
+			}
+			System.out.println(" ");
+		}
+	}
+}
+
+	
