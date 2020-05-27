@@ -1,0 +1,35 @@
+
+package test;
+import java.util.*;
+/*
+Prime number or note
+
+ */
+
+public class demo {
+	public static void main(String[] args )
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number ");
+		int number = sc.nextInt();
+		 boolean isPrime= true;
+		 for(int i=2;i<Math.sqrt(number);i++)
+		 {
+			 if(number%i==0)
+			 {
+				 isPrime =false;
+				 break;
+			 }
+		 }
+		  if(isPrime)
+		  {
+				 System.out.print(number+" is Prime Number");
+		  }
+			 else
+			 {
+				 System.out.print(number+" is not  Prime Number");
+			 }	
+		}
+}
+
+	
