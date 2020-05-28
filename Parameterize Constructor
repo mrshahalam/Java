@@ -1,0 +1,45 @@
+
+package test;
+import java.util.*;
+/*
+Prime number or note
+
+ */
+
+public class demo {
+	public static void main(String... args )
+	{
+		
+		abc sc = new abc(5.565);
+		aaa cs = new aaa(6);
+		cs.m();
+		
+	}
+	
+} 
+		class abc
+		{
+			public abc(int i)
+			{
+				System.out.println("in class abc ");
+			}
+			public abc(double u)
+			{
+				System.out.println(u);
+			}
+	
+}
+		class aaa
+		{
+			void m()
+			{
+				System.out.print("shah alam");
+			}
+			public aaa(int t)
+			
+			{
+				System.out.print(t);
+			}
+		}
+
+	
