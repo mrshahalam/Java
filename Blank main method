@@ -1,0 +1,28 @@
+
+package test;
+import java.util.*;
+/*
+static   number or note
+
+ */
+
+public class demo {
+	static
+	{
+		System.out.print("shah alam");
+	}
+	
+	
+	public static void main(String... args )
+	{
+		
+
+       		
+	}
+	
+	
+	
+} 
+     
+
+		
