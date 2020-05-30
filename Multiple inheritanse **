@@ -1,0 +1,37 @@
+package test;
+import java.util.*;
+/*
+static   number or note
+
+ */
+class a {
+	void apple()
+	{
+		System.out.println("Apple");
+	}
+}
+class b  extends a{
+	void apple()
+	{
+		System.out.println("Banana");
+	}
+}
+class c  extends a,b{    // error  which methods it invoke first--------
+	void apple()
+	{
+		System.out.println("Banana");
+	}
+}
+
+public class demo extends b {
+	
+	public static void main(String... args )
+	{
+		demo ds = new demo();
+		ds.apple();
+	}
+} 
+
+     
+
+		
