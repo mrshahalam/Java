@@ -1,0 +1,80 @@
+package test;
+import java.util.*;
+/*
+Encapsulation
+
+ */
+class a {
+	private int empid;
+	private String empname;
+	private int enroll;
+	private String course;
+	public int getEmpid() {
+		return empid;
+	}
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+	public String getEmpname() {
+		return empname;
+	}
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+	public int getEnroll() {
+		return enroll;
+	}
+	public void setEnroll(int enroll) {
+		this.enroll = enroll;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+}
+public class demo {
+	
+	public static void main(String... args )
+	{
+		a sc = new a();
+		a sc1 = new a();
+		a sc2 = new a();
+		sc.setEmpid(34546);
+		sc.setEmpname("Shah Alam");
+		sc.setEnroll(456);
+		sc.setCourse("b.tech");
+		
+		sc1.setEmpid(566);
+		sc1.setEmpname("ahmad");
+		sc1.setEnroll(5667);
+		sc1.setCourse("bba");
+		
+		sc2.setEmpid(546765);
+		sc2.setEmpname("bviurr");
+		sc2.setEnroll(46456);
+		sc2.setCourse("nursing");
+		
+		
+		
+		System.out.println("Name       :"+sc.getEmpname());
+		System.out.println("ID         :"+sc.getEmpid());
+		System.out.println("Enrollment :"+sc.getEnroll());
+		System.out.println("Course     :"+sc.getCourse());
+		
+		System.out.println("Name       :"+sc1.getEmpname());
+		System.out.println("ID         :"+sc1.getEmpid());
+		System.out.println("Enrollment :"+sc1.getEnroll());
+		System.out.println("Course     :"+sc1.getCourse());
+		
+		System.out.println("Name       :"+sc2.getEmpname());
+		System.out.println("ID         :"+sc2.getEmpid());
+		System.out.println("Enrollment :"+sc2.getEnroll());
+		System.out.println("Course     :"+sc2.getCourse());
+	}
+} 
+
+     
+
+		
