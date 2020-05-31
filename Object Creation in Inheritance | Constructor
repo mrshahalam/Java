@@ -1,0 +1,36 @@
+package test;
+import java.util.*;
+/*
+static   number or note
+ */
+public class demo{
+	
+	public static void main(String[] args )
+	{
+		Scanner sc1 = new Scanner (System.in);
+		abc sc = new abcd();
+		sc.abc();
+				
+	}
+	
+} 
+class abc 
+{
+	public void abc()
+	{
+		
+		System.out.print("shah alam");
+	}
+}
+class abcd extends abc 
+{
+	public void abc()
+	{
+		System.out.print("class B");
+
+	}
+}
+
+     
+
+		
