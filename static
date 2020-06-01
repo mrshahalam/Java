@@ -1,0 +1,51 @@
+package test;
+import java.util.*;
+/*
+  
+static   Keyword
+In Java, static keyword is mainly used for memory management
+When a member of the class is declared as static, it can be accessed before the objects of its class are created, and without any object reference.
+It is a keyword which is used to share the same variable or method of a given class
+Basically, static is used for a constant variable or a method that is same for every instance of a class.
+When you declare a variable as static, then a single copy of the variable is created and divided among all objects at the class level. 
+ It Execute before constructor and methods...
+ */
+
+class Emp              
+{                      
+	String Name;      
+	int Enroll;
+	static String  Course;        
+	public void shaow()
+	{
+		System.out.println(Name+"  :"+Enroll+"  :"+Course+".");
+
+	}
+}
+public class demo{
+		
+	public static void main(String[] args )
+	{
+		
+		Emp shah = new Emp();
+		shah.Name="Shah Alam";
+		shah.Enroll=52000;
+		shah.Course="BlueTech";
+		
+		Emp ahmad = new Emp();
+        ahmad.Name="Ahmad Kabeer";
+        ahmad.Enroll=120000;
+        ahmad.Course="BBA";
+        
+        Emp zubair= new Emp();
+        zubair.Name="Zubair";
+        zubair.Enroll=10;
+        zubair.Course="B.Tech";
+        
+		shah.shaow();
+		ahmad.shaow();zubair.shaow();
+		
+				
+	}
+	
+} 
