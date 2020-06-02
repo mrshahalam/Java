@@ -1,0 +1,49 @@
+package b;
+import java.sql.*;
+/*
+Abstract Class
+Abstract class contains the ‘abstract’ keyword. But what exactly it means? If you make the class abstract, it cannot be instantiated, i.e you cannot create an object of an abstract class. Also, an abstract class can contain abstract as well as concrete methods.
+Note: You can achieve 0-100% abstraction using an abstract class.
+To use an abstract class, you have to inherit it from the base class. Here, you have to provide implementations for the abstract methods, else it will become an abstract class.
+Let’s look at the syntax of an abstract class:
+
+Abstract class Sports {   // abstract class sports
+Abstract void jump();    // abstract method
+}
+**/
+
+public  class tech {
+    public static  void  main(String[] args)
+    {
+        alam sc = new ahmad();
+        sc.messaging();
+        sc.call();
+        sc.chatting();
+        sc.music();
+    }
+}
+abstract class alam
+{
+    public void call()
+    {
+        System.out.println("calling");
+    }
+    abstract public void messaging();
+    abstract public void chatting();
+    abstract public void music();
+}
+abstract class shah extends  alam
+{
+    public void messaging() {
+        System.out.println("Messaging");
+    }
+}
+ class ahmad extends shah{
+
+    public void chatting() {
+        System.out.println("Chatting");
+    }
+    public void music() {
+        System.out.println("Music");
+    }
+}
