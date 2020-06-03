@@ -1,0 +1,19 @@
+package b;
+import java.util.*;
+/*
+
+**/
+
+public  class tech {
+    public static  void  main(String[] args)
+    {
+        System.out.println("Enter first String");
+        Scanner sc = new Scanner(System.in);
+        String s1 =sc.nextLine();
+        System.out.println("Enter Second String");
+        String s2 =sc.nextLine();
+        String s3 = s1.concat(s2);
+        s3 = s3.toUpperCase();
+        System.out.println("The Result of the string is : "+s3);
+    }
+}
