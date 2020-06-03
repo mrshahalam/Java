@@ -1,0 +1,17 @@
+package b;
+import java.util.*;
+/*
+getting the premitive value from the object is called unboxing
+**/
+
+public  class tech {
+    public static  void  main(String[] args)
+    {
+       int i=8;
+       Integer s = new Integer(i);  // Boxing.......... main for interview
+       System.out.println(i);
+       Integer jj=i;               // AutoBoxing
+        int j=jj.intValue();       //Unboxing.............
+        int k=jj;                  //AutoUnboxing...............
+    }
+}
