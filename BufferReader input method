@@ -1,0 +1,14 @@
+package test;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class demo {
+	public static void main(String[] args ) throws Exception
+	{
+		InputStreamReader is = new InputStreamReader(System.in);
+		BufferedReader  br = new BufferedReader(is);
+		int i =Integer.parseInt(br.readLine());
+		System.out.print(i);
+}
+}
