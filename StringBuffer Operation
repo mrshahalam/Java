@@ -1,0 +1,25 @@
+package b;
+import java.util.*;
+/*
+getting the premitive value from the object is called unboxing
+**/
+
+public class tech {
+    public static  void  main(String[] args)
+    {
+       StringBuffer sb = new StringBuffer("shah");
+       sb.replace(1,2,"khan");             //is used to replace the string from specified startIndex and endIndex.
+       sb.append("hbdkshg");                            //is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc.
+       sb.insert(3,"insert_operation");       //is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc.
+       sb.replace(2,3,"replace_operation");//is used to replace the string from specified startIndex and endIndex.
+       sb.reverse();                                    //is used to reverse the string.
+       sb.delete(2,5);                                  //is used to delete the string from specified startIndex and endIndex.
+       sb.capacity();                                   //	is used to return the current capacity.   If the number of character increases from its current capacity, it increases the capacity by (oldcapacity*2)+2
+       sb.ensureCapacity(5);             //is used to ensure the capacity at least equal to the given minimum.
+       sb.charAt(5);                                   //is used to return the character at the specified position.
+       sb.length();                                    //is used to return the length of the string i.e. total number of characters.
+       sb.substring(4,8);                              //is used to return the substring from the specified beginIndex.
+       sb.toString();
+       System.out.println(sb);
+    }
+}
