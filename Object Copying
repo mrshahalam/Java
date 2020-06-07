@@ -1,0 +1,28 @@
+package test;
+import java.nio.file.*;
+/*
+ Object Clonning
+ 
+ */
+class abc
+{
+    public int i=5;
+    int j=3;
+}
+
+public class demo {
+	public static void main(String[] args ) throws Exception
+	{
+		abc obj = new abc();
+        obj.i=4;
+        obj.j=6;
+        System.out.println("Copy "+obj.i);
+        abc obj1=obj;              // Shallow Copy
+        System.out.println("The Shallow Copy of Object : "+obj1.i);
+        /*---------------------------------------------------------------*/
+        abc obj2= new abc();
+        obj2.i=obj.i;
+        obj2.j=obj.j;
+        System.out.println("The Deep  Copy of Object : "+obj2.j);
+		    }
+		}
