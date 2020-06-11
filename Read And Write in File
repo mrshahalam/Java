@@ -1,0 +1,38 @@
+package test;
+import java.io.FileOutputStream; 
+import java.io.FileInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedInputStream;
+public class demo {
+ 
+	public static void main(String[] args)   throws Exception
+	{
+	{ 
+		FileOutputStream  f = new FileOutputStream("D://alam.txt");
+		BufferedOutputStream  bin  = new  BufferedOutputStream(f);
+		String str =" this is written by shah alam from eclipse";
+		byte b[]= str.getBytes();
+		bin.write(b);
+		
+		bin.close();
+		//----------------------------------
+		FileInputStream  fi = new FileInputStream("D://alam.txt");
+		BufferedInputStream bf = new BufferedInputStream(fi);
+		int i=0;
+		while((i=bf.read())!=-1)
+		{
+			System.out.print((char)i);
+		}
+		
+		
+        
+    System.out.println("Success");    
+    }
+}
+}
+
+
+
+		
+
+
