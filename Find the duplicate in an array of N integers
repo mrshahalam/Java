@@ -1,0 +1,40 @@
+package test;
+import java.io.*; 
+
+
+public class demo {
+	void fun(int array[],int size)
+	{
+		System.out.println("Repeated Element are : ");
+		for(int i=0;i<size;i++)
+		{
+			for(int j=i+1;j<size;j++)
+			{
+				if(array[i]==array[j])
+				{
+					System.out.print(array[i]+" ");
+				}
+			}
+		}
+	}
+	
+	public static void main(String[] args)   
+	{
+		demo obj = new demo();
+		int arr[]={4,6,8,9,2,6,8,4,7,7,7,7};
+		int arr_size = arr.length;
+		obj.fun(arr,arr_size);
+		
+		
+}
+}
+
+
+
+
+
+
+
+		
+
+
