@@ -1,0 +1,22 @@
+package test;
+import java.io.FileOutputStream; 
+ 
+public class demo {
+ 
+	public static void main(String[] args)   throws Exception
+	{
+	{
+	
+
+  
+    	FileOutputStream fs = new FileOutputStream("D://alam.txt");
+    	String str = "i'm  wrting the data into the file";
+    	byte b[]= str.getBytes();
+    	fs.write(b);
+    	fs.close();
+    	
+   
+    System.out.println("Success");    
+    }
+}
+}
