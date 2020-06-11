@@ -1,0 +1,16 @@
+package test;
+import java.io.*; 
+
+public class demo {
+ 
+	public static void main(String[] args)   throws Exception
+	{
+	{
+		Writer w = new FileWriter("D://writer.txt");
+		String str ="this is written by the programmmeof write family";
+		w.write(str);
+		w.close();
+		System.out.print("Done"); 
+}
+}
+}
