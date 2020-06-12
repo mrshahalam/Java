@@ -1,0 +1,36 @@
+package test;
+import java.util.*;
+					/*
+The join() method waits for a thread to die. In other words, it causes the 
+currently running threads to stop executing until the thread it joins with completes its task.
+					 */	  
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		int arr[] = new int[3];
+		
+		//Collection<Integer> nn = new ArrayList();  // not work on indexing
+		//List<Integer> nn = new ArrayList<Integer>();  /// it may contain dublicate  element
+		//Set<Integer> nn = new HashSet<Integer>();         // it not  contain dublicate  element but i give rondam order
+		//Set<Integer> nn = new TreeSet<Integer>();    // it give sorted  element
+		Map<Integer,String>  nn = new HashMap<>();     // it take value in Key,Value pair
+		nn.put(1, "hvkd");
+		nn.put(2, "shah");
+		nn.put(3, "ahmad");
+		nn.put(4, "arif");
+		nn.put(4, "arifee");
+		
+		System.out.println(nn);
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
