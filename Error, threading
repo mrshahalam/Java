@@ -1,0 +1,26 @@
+package test;
+import java.util.*;
+						  
+public class demo extends Thread {
+	 public void run(){  
+		   System.out.println("running...");  
+		 }     
+		
+	public static void main(String[] args)   
+	{
+	demo t1 = new demo();
+	t1.start();  
+	t1.start();  
+		
+}
+}
+  
+
+
+
+
+
+
+		
+
+
