@@ -1,0 +1,40 @@
+package test;
+import java.util.*;
+						  
+public class demo extends Thread {
+	
+	public static void main(String[] args)   
+	{
+		demo t1 = new demo();
+		{
+			for(int i=1;i<=3;i++)
+			{
+				System.out.println("first code : "+i);
+				try{Thread.sleep(1000);}catch(Exception e){};
+			}
+
+		}
+		demo t2 = new demo();
+		{
+			for(int i=1;i<=3;i++)
+			{
+				System.out.println("Second code : "+i);
+				try{Thread.sleep(1000);}catch(Exception e){};
+			}
+
+		}
+				
+}
+
+	
+}
+  
+
+
+
+
+
+
+		
+
+
