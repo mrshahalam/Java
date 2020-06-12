@@ -1,0 +1,53 @@
+package test;
+import java.util.*;
+class abc implements Runnable
+{
+	public void run()
+	{
+		for(int i=0;i<=5;i++)
+		{
+			System.out.println("hellow");
+			try {Thread.sleep(2000);} catch(Exception e) {}
+		}
+		
+	}
+}
+class xyz implements Runnable
+{
+	public void run()
+	{
+		for(int i=0;i<=5;i++)
+		{
+			System.out.println("xyz");
+			try {Thread.sleep(2000);} catch(Exception e) {}
+		}
+		
+	}
+}
+public class demo {
+
+	public static void main(String[] args)   
+	{
+		abc obj = new abc();
+		abc obj1 = new abc();
+		
+		Thread  tt = new Thread(obj);
+		Thread  tt1 = new Thread(obj1);
+		
+		tt.start();
+		try {Thread.sleep(1000);} catch(Exception e) {}
+
+		tt1.start();
+		 
+}
+}
+
+
+
+
+
+
+
+		
+
+
