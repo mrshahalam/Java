@@ -1,0 +1,50 @@
+package test;
+import java.util.*;
+					/*
+The join() method waits for a thread to die. In other words, it causes the 
+currently running threads to stop executing until the thread it joins with completes its task.
+					 */	  
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		
+		System.out.println("Main Thread : "+Thread.currentThread());
+		demo t1 = new demo();
+		{
+			for(int i=1;i<=3;i++)
+			{
+				System.out.println("first thread : "+i+"  Thread Pririty : "+t1.getPriority());
+				try{Thread.sleep(1000);}catch(Exception e){};
+			}
+		}
+		demo t2 = new demo();
+		{
+			for(int i=1;i<=3;i++)
+			{
+				System.out.println("Second Thread : "+i+" Thread Pririty :  "+t2.getPriority());
+				try{Thread.sleep(1000);}catch(Exception e){};
+			}
+		}
+		t1.setPriority(Thread.MIN_PRIORITY);
+		t2.setPriority(MAX_PRIORITY);
+		
+		t1.join();
+		t2.join();
+		System.out.println(t2.isAlive());
+		System.out.println(t1.isAlive());
+		
+		System.out.println(t1.getPriority());
+		System.out.println(t2.getPriority());
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
