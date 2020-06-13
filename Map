@@ -1,0 +1,45 @@
+package test;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Set;
+/*
+ * It will not give  you values on sequence  
+ */
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		Map<String,String> m = new HashMap();
+		m.put("Microsoft","Satya Nadella");
+		m.put("PepsiCo","Indra Naido");
+		m.put("Google","Sundar Pichai");
+		m.put("Oracle","Larry");
+		m.put("Adobe","Abobe wala");
+		m.put("Facebook","Mark Zukerberg");
+		System.out.println(m.get("Oracle"));
+		Set<String> s = m.keySet();  // method to get the keys of map
+		for(String h : s)
+		{
+			System.out.println("key  : "+h);
+		}
+		//---------------------------Most Interview Asked Question---------------------------------------------
+		Set<Map.Entry<String,String>> n = m.entrySet();
+		for(Map.Entry<String,String> e  : n )
+		{
+			System.out.println(e.getKey()+"  : "+e.getValue());
+		}
+		
+		
+}	
+}
+
+  
+
+
+
+
+
+
+		
+
+
