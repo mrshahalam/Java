@@ -1,0 +1,49 @@
+package test;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+					/*
+.                     Collection Aand Generics  1.5
+                      Dynamic Array
+					 */	  
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		Collection values = new ArrayList();
+		values.add(345);
+		values.add("gngrfv");
+		values.add(4.67876);
+		values.add(4.67f);
+		
+		values.remove(345);               // remove method
+		Iterator i = values.iterator();
+		//----------------First Method--------------------------
+		System.out.println(i.next());
+		System.out.println(i.next());
+		System.out.println(i.next());
+		System.out.println(i.next());
+		//----------------Second Method--------------------------
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		//----------------Third Method--------------------------
+		 for(Object o : values)
+		 {
+			 System.out.println(i.next());
+		 }
+		
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
