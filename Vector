@@ -1,0 +1,46 @@
+package test;
+import java.util.Vector;
+import java.util.Iterator;
+/*
+ * Dynamic Array  
+ * Increse the size by 100%
+ *  Memory Wasted
+ *  It is Thread safe 
+ */
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		Vector<String> v = new Vector<String>();
+		v.add("224");
+		v.add("dfd");
+		v.add("34.56");
+		v.add("dfsdv");
+		v.add("aa");
+		v.add("aas");
+		v.add("ty");
+		v.add("iop");
+		v.add("dfsdv");
+		v.add("aa");
+		v.add("tt");
+		v.add("ss");
+		
+		// remove 
+		v.remove(3);
+		System.out.println(v.capacity());
+		for(Object r : v)
+		{
+			System.out.println(r);
+		}
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
