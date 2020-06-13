@@ -1,0 +1,36 @@
+package test;
+import java.util.HashSet;
+import java.util.Iterator;
+/*
+ * Dynamic Array  
+ * Increse the size by 100%
+ *  Memory Wasted
+ *  It is Thread safe 
+ */
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		 //Creating HashSet and adding elements  
+	    HashSet<String> set=new HashSet();  
+	           set.add("One");    
+	           set.add("Two");    
+	           set.add("Three");   
+	           set.add("Four");  
+	           set.add("Five");  
+	           for(Object t : set)
+	           {
+	        	   System.out.println(t);
+	           }
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
