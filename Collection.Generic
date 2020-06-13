@@ -21,7 +21,7 @@ public class demo extends Thread {
 		nn.put(4, "arif");
 		nn.put(4, "arifee");
 		
-		System.out.println(nn);
+		System.out.println(nn.get(1));
 }	
 }
   
