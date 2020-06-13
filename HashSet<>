@@ -1,0 +1,45 @@
+package test;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+
+					/*
+.                    The PriorityQueue class implements the Queue interface. It holds the elements or objects which are to be 
+processed by their priorities. PriorityQueue doesn't allow null values to be stored in the queue
+					 */	  
+      class container<T>
+      {
+    	  T b;
+    	  
+      }
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		HashSet<String> set=new HashSet<String>();  
+		set.add("Ravi");  
+		set.add("Vijay");  
+		set.add("Ravi");  
+		set.add("Ajay");  
+		//Traversing elements  
+		Iterator<String> itr=set.iterator();  
+		while(itr.hasNext()){  
+		System.out.println(itr.next());  
+		}  
+		
+		
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
