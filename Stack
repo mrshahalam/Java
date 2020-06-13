@@ -1,0 +1,49 @@
+package test;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+import java.util.Iterator;
+
+
+					/*
+.                     Collection Aand Generics  1.5
+                      Dynamic Array
+					 */	  
+      class container<T>
+      {
+    	  T b;
+    	  
+      }
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		Stack<String> ss = new Stack<String>();
+		ss.push("shah");
+		ss.push("alam");
+		ss.push("ahmad");
+		ss.push("kabeer");
+		ss.push("arif");
+		ss.push("khan");
+		ss.push("singh");
+		
+		ss.pop();
+		Iterator<String> ii = ss.iterator();
+		while(ii.hasNext())
+		{
+			System.out.println(ii.next());
+		}
+		
+		
+}	
+}
+  
+
+
+
+
+
+
+		
+
+
