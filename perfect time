@@ -1,0 +1,30 @@
+package test;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;
+import java.time.LocalDateTime.*; 
+
+
+/*
+ * It will not give  you values on sequence  
+ */
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		  LocalDateTime datetime1 = LocalDateTime.now();  
+		  DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-m-y h:m:ss");  // main thing    
+		    String formatDateTime = datetime1.format(format);   
+		    System.out.println(formatDateTime);    
+}	
+}
+
+  
+
+
+
+
+
+
+		
+
+
