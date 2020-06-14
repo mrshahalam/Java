@@ -1,0 +1,50 @@
+package test;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;
+import java.time.LocalDateTime.*; 
+/*
+ *  
+ */
+@FunctionalInterface      // has only one method
+interface abc 
+{
+	void show();
+}
+ class a 
+ {
+	 @SuppressWarnings("unchecked")
+	 public void show()
+	 {
+		 System.out.println("in a a ");
+	 }
+ }
+ class b extends a 
+ {
+	 @Deprecated  @Override
+	 public void show()
+	 {
+		 System.out.println("in a b ");
+	 }
+ }
+ 
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		b sd = new b();
+		sd.show();
+		sd.show();
+		}	  
+}	
+
+
+  
+
+
+
+
+
+
+		
+
+
