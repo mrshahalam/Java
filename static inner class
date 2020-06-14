@@ -1,0 +1,43 @@
+package test;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;
+import java.time.LocalDateTime.*; 
+
+
+/*
+ * It will not give  you values on sequence  
+ */
+class a
+{
+	 int i=9;
+	 static class b
+	{
+		int j=3;
+	}
+}
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		a  o = new a();
+		//o.i=9;
+		System.out.println(o.i);
+		a.b   s = new a.b();
+		//s.j=6;
+		System.out.println(s.j);
+
+		
+		  
+}	
+}
+
+  
+
+
+
+
+
+
+		
+
+
