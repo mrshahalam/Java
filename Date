@@ -1,0 +1,28 @@
+package test;
+import java.time.LocalDate;
+/*
+ * It will not give  you values on sequence  
+ */
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		 LocalDate date = LocalDate.now();  
+		 LocalDate tomarrow =date.plusDays(1);
+		 LocalDate yesterday = date.minusDays(1);
+		 System.out.println("Today date     : "+date);  //  yyyy-mm-dd
+		 System.out.println("Yesterdat Date : "+tomarrow);
+		 System.out.println("Yesterdat Date : "+yesterday);
+}	
+}
+
+  
+
+
+
+
+
+
+		
+
+
