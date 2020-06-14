@@ -1,0 +1,48 @@
+package test;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;
+import java.time.LocalDateTime.*; 
+
+
+/*
+ * It will not give  you values on sequence  
+ */
+enum Level{
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+}
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		Level l = Level.WEDNESDAY;
+		switch(l)
+		{
+		case FRIDAY:
+			System.out.println(l);
+			break;
+		case WEDNESDAY:
+			System.out.println(l);
+			break;
+		case THURSDAY:
+			System.out.println(l);
+			break;
+			default :
+				System.out.println("---------------");
+
+				
+		}
+		
+		  
+}	
+}
+
+  
+
+
+
+
+
+
+		
+
+
