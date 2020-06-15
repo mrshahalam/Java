@@ -1,0 +1,38 @@
+package test;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+/*
+ *  Stream Api Feature part -01
+ */ 
+
+
+interface abc 
+{
+	 public String  draw();
+}
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		int g=5;
+		abc d =  ()->{
+			return "hi this is me e :  "+g;
+			
+		};
+		System.out.println(d.draw());
+		}	  
+}	
+
+
+  
+
+
+
+
+
+
+		
+
+
