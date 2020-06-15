@@ -1,0 +1,45 @@
+package test;
+import java.sql.*;
+/*
+ *  1. import the package------------------java.sql
+ *  2. load and register the driver----------com.mysql.jdbc.Driver
+ *  3. create a connection
+ *  4. create a statement
+ *  5. execute the Query
+ *  6. process the result
+ *  7. close 
+ */  
+
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{
+		String url = "jdbc:mqsql://localhost:3307//happy/salaries";
+		String uname = "root";
+		String pass = "";
+		String query = " select * from student";
+		Class.forName("com.mysql.jdbc.Driver");  // it is responsible for loading the driver for you
+		Connection con = DriverManager.getConnection(url,uname,pass);
+		Statement  st = con.createStatement();
+		st.executeQuery(query);
+		ResultSet  rs = st.executeQuery(query);
+		rs.next();
+		String name  = rs.getString("username");
+		
+		System.out.print(name);
+		st.close();
+		con.close();
+		}	  
+}	
+
+
+  
+
+
+
+
+
+
+		
+
+
