@@ -1,0 +1,29 @@
+package test;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+/*
+ *  
+ *  */
+
+ public class demo {
+	public static void main(String[] args)   throws Exception
+	{ 
+		 String sDate1="16/06/2020";  
+		    Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);  
+		    System.out.println(sDate1+"\t"+date1);  
+}
+}
+ 
+
+
+  
+
+
+
+
+
+
+		
+
+
