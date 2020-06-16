@@ -1,0 +1,32 @@
+package test;
+/*
+ *  
+ *  */
+interface inter
+{
+	public void  m1(int u,String str);
+}
+  
+public class demo extends Thread {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		 inter o =(u,str)->
+		 {
+			System.out.println("Lambda expression is running perfectly : "+u); 
+		 };
+		 o.m1(56,"abcdefghijk");	        
+}
+}
+
+
+  
+
+
+
+
+
+
+		
+
+
