@@ -1,0 +1,29 @@
+package test;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+/*
+ *  
+ *  */
+
+ public class demo {
+	public static void main(String[] args)   throws Exception
+	{ 
+		String s="hello";  
+		Object obj=s;  
+		System.out.println(obj);  
+}
+}
+ 
+
+
+  
+
+
+
+
+
+
+		
+
+
