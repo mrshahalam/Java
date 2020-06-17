@@ -1,0 +1,257 @@
+package test;
+import java.util.Scanner;  
+
+/*
+ *  
+ *  */
+ class calc
+ {
+	 Scanner sc = new Scanner(System.in);
+	 public  void add()
+	 {
+		System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  sum   of the given number is : "+(n1+n2));
+	 }
+	 public  void sub()
+	 {
+		 System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  subtraction   of the given number is : "+(n1-n2));
+	 }
+	 
+	 public  void mul()
+	 {
+		 System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  multiplication   of the given number is : "+(n1*n2));
+	 }
+	 
+	 public  void divide()
+	 {
+		 System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  divide   of the given number is : "+(n1/n2));
+	 }
+	 
+	 public  void modulas()
+	 {
+		 System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  sum   of the given number is : "+(n1%n2));
+	 }
+	 
+	 public  void squareroot()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  sum   of the given number is : "+(n1*n1));
+	 }
+	 
+	 public  void log()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  log   of the given number is : "+Math.log(n1));
+	 }
+	 
+	 public  void cuberoot()
+	 {
+		System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  cuberoot   of the given number is : "+Math.cbrt(n1));
+	 }
+	 
+	 public  void hypo()
+	 {
+		 System.out.println("Enter two number : ");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		System.out.println("The  hypo   of the given number is : "+Math.hypot(n1, n2));
+	 }
+	public  void round()
+		 {
+		    System.out.println("Enter the number : ");
+			double n1 = sc.nextDouble();
+			System.out.println("The  hypo   of the given number is : "+Math.round(n1));
+	 }
+	 
+	 public  void sin()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  sin   of the given number is : "+Math.sin(n1));
+	 }
+	 
+	 public  void cos()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  cos   of the given number is : "+Math.cos(n1));
+	 }
+	 
+	 public  void tan()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  tan   of the given number is : "+Math.tan(n1));
+	 }
+	 
+	 public  void cosec()
+	 {
+		System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  cosec   of the given number is : "+Math.sinh(n1));
+	 }
+	 
+	 public  void sec()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  sec   of the given number is : "+Math.cosh(n1));
+	 }
+	 public  void cot()
+	 {
+		 System.out.println("Enter the number : ");
+		double n1 = sc.nextDouble();
+		System.out.println("The  cot   of the given number is : "+Math.tanh(n1));
+	 }
+	 public  void percenage()
+	 {
+		 System.out.print("Enter the number    : ");
+		double n1 = sc.nextDouble();
+		 System.out.print("Percentage(%)  : ");
+		double n2 = sc.nextDouble();
+		System.out.println("The  Result    of the given number is : "+(n2*n1/100));
+	 }
+	 public  void Discount()
+	 {
+		System.out.print("Enter the number  \nOriginal Price   : ");
+		double n1 = sc.nextDouble();
+		 System.out.print("Discount (%off) : ");
+		double n2 = sc.nextDouble();
+		double r=(n2*n1/100);
+		System.out.println("Final price 	:"+(n1-r));
+		System.out.print("You saved 	: "+r+" rupees");
+	 }
+	 public void speed()
+	 {
+		 System.out.println("Enter the speed in m/s");
+		 double n1 = sc.nextDouble();
+		 System.out.print("The given speed in Km/h is : "+18*n1/5+" km/h");
+		 
+	 }
+	 public void Time()
+	 {
+		 System.out.print("Enter the time in minutes : ");
+		 double n1 = sc.nextDouble();
+		 System.out.print("The given time in second is : "+60*n1);
+	 }
+	 
+	
+ }
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Which Operation you want to perform.  Press the suitable Key : ");
+		System.out.print("1. Add \n2. Subtraction \n3. Multiplication \n4. Divide \n----------"
+				+ "-----------Math--------------------- \n5. Modulas \n"
+				+ "6. SquareRoot \n7. Log \n8. CubeRoot \n9.  Hypotanious \n10. Round \n----------"
+				+ "---------Trigonometry------------------------\n11. sin \n"
+				+ "12. cos \n13. tan \n14. cosec \n15. sec \n16. cot \n17.Percentage \n18.Discount "
+				+ " \n19.speed(m/s to km/h)  \n20. Time  \n --"
+				+ "----------------------------------------------------- ");
+		 calc cc= new calc();
+		int  op =sc.nextInt();
+		switch(op)
+		{
+		case 1:
+			cc.add();
+					break;			
+			  
+		case 2:
+			
+			  cc.sub();
+			  break;
+		case 3:
+			  cc.mul();
+			  break;
+		case 4:
+			  cc.divide();
+			  break;	  
+		case 5:
+			  cc.modulas();
+			  break;
+		case 6:
+			  cc.squareroot();
+			  break;
+		case 7:
+			  cc.log();
+			  break;
+		case 8:
+			  cc.cuberoot();
+			  break;
+		case 9:
+			  cc.hypo();
+			  break;
+		case 10:
+			  cc.round();
+			  break;
+		case 11:
+			  cc.sin();
+			  break;
+		case 12:
+			  cc.cos();
+			  break;
+		case 13:
+			  cc.tan();
+			  break;
+		case 14:
+			  cc.cosec();
+			  break;
+		case 15:
+			 cc.sec();
+			  break;
+		case 16:
+			  cc.cot();
+			  break;
+		case 17:
+			  cc.percenage();
+			  break;
+		case 18:
+			  cc.Discount();
+			   break;
+		case 19:
+			  cc.speed();
+			  break;
+		case 20:
+			  cc.Time();
+			  break;
+		default :
+			  System.out.print("You entered invalid Operator !!...\nplease enter valid operator");
+			  
+		}
+}
+}
+ 
+
+  
+
+
+
+
+
+
+		
+
+
