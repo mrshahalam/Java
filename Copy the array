@@ -1,0 +1,31 @@
+package test;
+import java.util.Scanner;  
+
+/*
+ *   Factorial of the number 
+*/
+
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		
+		int arr1[]={1,2,3,4,5};
+		System.out.println(" First Array : ");
+		int arr2[]= new int[arr1.length];
+		for(int  i=0;i<5;i++)
+		{
+			arr2[i]=arr1[i];	
+		}
+		for(int k=0;k<=4;k++)
+		{
+			System.out.print(" "+arr1[k]);
+		}
+		System.out.println("\n Second Array : ");
+		for(int k=0;k<=4;k++)
+		{
+			System.out.print(" "+arr2[k]);
+		}	
+	}
+}
+// -- by Shah Alam
