@@ -1,32 +1,50 @@
 
 package test;
-import java.util.*;
-/*
-Fibonacci Series 1 1 2 3 5 8 13 21 34 55 89 ................................
- */
+import java.util.Scanner;  
 
-public class demo {
-	public static void main(String[] args )
-	{
-		Scanner ob = new Scanner(System.in);
-		int k=0,a=1,b=1;
-		System.out.print("Enter the number ");
-		int n =ob.nextInt();
-		System.out.print("1, 1,");
-		while(k<=n)
-		{
-			k=a+b;
-			if(k>=n)
-				break;
-			System.out.print(k+", ");
-			a=b;
-			b=k;
+/*
+ *  
+*/
+
+public  class demo {
+	static int n1=0,n2=1,n3=0;
+	   public void fibonacci(int c )
+	   {
+		 if(c>0)
+		 {
+			 n3=n2+n1;
+			 n1=n2;
+			 n2=n3;
+			 System.out.print(" "+n3);
+			 fibonacci(c-1);
+		 }
+	   }
+	public static void main(String[] args)   throws Exception
+	{ 
+		demo d = new demo();
+	    
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("How many element you want to print : ");
+	    int count =sc.nextInt();
+	    System.out.print(n1+" "+n2);
+	    d.fibonacci(count);
 			
 		}
-			
 		
-		
-	}
 }
+
+
+ 
+
+  
+
+
+
+
+
+
+		
+
+
 
 	
