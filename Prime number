@@ -1,35 +1,52 @@
-
 package test;
-import java.util.*;
+import java.util.Scanner;  
+
 /*
-Prime number or note
+ *  
+*/
 
- */
-
-public class demo {
-	public static void main(String[] args )
-	{
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		System.out.print("Enter the element  you want to check : ");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number ");
-		int number = sc.nextInt();
-		 boolean isPrime= true;
-		 for(int i=2;i<Math.sqrt(number);i++)
-		 {
-			 if(number%i==0)
-			 {
-				 isPrime =false;
-				 break;
-			 }
-		 }
-		  if(isPrime)
-		  {
-				 System.out.print(number+" is Prime Number");
-		  }
-			 else
-			 {
-				 System.out.print(number+" is not  Prime Number");
-			 }	
+		int  n = sc.nextInt();
+		if(n<=0)	
+		{
+			System.out.print("Invalid number !!.. Please  enter number above 1");
 		}
+		if(n==1||n==2)
+		{
+			System.out.printf("%d is prime number",n);
+		}
+		for(int i=2;i<=n-1;i++)
+		{
+			if(n%i==0)
+			{
+				System.out.printf("%d is not  prime number",n);
+				break;	
+			}
+			System.out.printf("%d is prime number",n);
+			break;
+		}
+	}	
 }
+// -- by Shah Alam
+
+ 
+
+  
+
+
+
+
+
+
+		
+
+
+
+
 
 	
