@@ -1,31 +1,22 @@
 package  first_project;
 										
 import java.util.*; 	
-
-							 class Student 
-							{ 
-								 
-								
-					
-							}				 
-												
-												
-											    
-							public  class first_class {
-								
-								public  static void main (String[] args)
-								{ 
-									
-									  String str = "hvvjn,blvycfchbknlkjiugyfugccfxawdygtiuhpih;kknkjbjhtfl";  
-								        int count = 0;  
-								        for (int i=0; i<=str.length()-1; i++) {  
-								            if(str.charAt(i) == 't') {  
-								                count++;  
-								            }  
-								        }  
-								        System.out.println("Frequency of t is: "+count);  
+								    
+		public  class first_class {
+			
+		public  static void main (String[] args)
+	       { 
 							
-								}
-							}
+		 String str = "hvvjn,blvycfchbknlkjiugyfugccfxawdygtiuhpih;kknkjbjhtfl";  
+		int count = 0;  
+		for (int i=0; i<=str.length()-1; i++) {  
+		if(str.charAt(i) == 't') {  
+		count++;  
+		}  
+		}  
+		System.out.println("Frequency of t is: "+count);  
+						
+		}
+		}
 							
 								
