@@ -1,0 +1,33 @@
+package test;
+import java.util.Arrays;
+import java.util.Scanner;  
+
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		int m[][]={{5,1,1,6},{7,2,2,2},{3,8,3,3}};
+		int n[][]={{6,1,1},{2,2,2},{3,3,3}};
+		
+		int row = m.length;
+		int col= m[0].length;
+		int row1 = n.length;
+		int col1= n[0].length;
+		
+		if(row==row1&&col==col1)
+		{
+			System.out.print("Matrices are equal");
+		}
+		else
+			System.out.print("Matrices  not are equal");
+		
+		
+		
+		
+            
+	}
+}
+
+
+
+
