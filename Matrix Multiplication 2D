@@ -1,0 +1,44 @@
+package test;
+import java.util.Arrays;
+import java.util.Scanner;  
+
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		int m[][]={{1,1,1},{2,2,2},{3,3,3}};
+		int n[][]={{1,1,1},{2,2,2},{3,3,3}};
+		
+		int row = m.length;
+		int col= m[0].length;
+		
+		int c[][]= new int[row][col];
+		
+		for(int i=0;i<row;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				
+				for(int k=0;k<3;k++)
+				{
+					c[i][j]= m[i][k]*n[k][j];
+				}
+			}
+		}
+		
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				System.out.print(" "+c[i][j]);
+			}
+			System.out.println();
+		}
+		
+            
+	}
+}
+
+
+
+
