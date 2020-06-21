@@ -1,0 +1,26 @@
+package test;
+import java.util.Arrays;
+import java.util.Scanner;  
+/*
+     Total number of character in the  given string 
+*/
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		int count=0;
+		String str ="shahalamhibhaitukyakrrahahokbromekuchnkehrahatyuee  ee      eee";
+		for(int i=0;i<=str.length()-1;i++)
+		{
+			if(str.charAt(i)!=' ')
+			{
+				count++;
+			}
+		}
+		System.out.print("Total character in the given string is : "+count );
+}
+}
+
+
+
+
